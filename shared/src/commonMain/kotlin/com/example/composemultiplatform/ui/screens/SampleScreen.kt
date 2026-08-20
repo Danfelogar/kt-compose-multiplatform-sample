@@ -16,11 +16,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import com.example.composemultiplatform.nativeComponents.NativeButton
 import com.example.composemultiplatform.viewmodel.SampleViewModel
 
 @Composable
 fun SampleScreen(viewModel: SampleViewModel = SampleViewModel()) {
     val text by viewModel.text.collectAsState()
+    val counter by viewModel.counter.collectAsState()
 
     MaterialTheme {
         Column(
@@ -38,6 +40,10 @@ fun SampleScreen(viewModel: SampleViewModel = SampleViewModel()) {
             ) {
                 Text(text = "Change Text")
             }
+            Text(text = "Counter: $counter")
+            NativeButton(
+                onClick = { viewModel.incrementCounter() }
+            )
         }
     }
 }
