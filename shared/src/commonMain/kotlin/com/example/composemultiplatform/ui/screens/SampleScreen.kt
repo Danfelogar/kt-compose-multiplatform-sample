@@ -27,11 +27,14 @@ fun SampleScreen(viewModel: SampleViewModel = SampleViewModel()) {
     MaterialTheme {
         Column(
             modifier = Modifier.fillMaxSize()
-                .background(color = Color.LightGray)
+                .background(color = MaterialTheme.colorScheme.background)
                 .safeContentPadding(),
             horizontalAlignment = Alignment.CenterHorizontally
         ){
-            Text(text = text)
+            Text(
+                text = text,
+                style = MaterialTheme.typography.titleSmall
+            )
             Spacer(modifier = Modifier.height(16.dp))
             Button(
                 onClick = {
