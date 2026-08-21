@@ -1,4 +1,4 @@
-package com.example.composemultiplatform.viewmodel
+package com.example.composemultiplatform.ui.viewmodel
 
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

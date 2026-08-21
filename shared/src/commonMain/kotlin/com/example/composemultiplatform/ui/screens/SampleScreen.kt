@@ -16,7 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.composemultiplatform.nativeComponents.NativeButton
-import com.example.composemultiplatform.viewmodel.SampleViewModel
+import com.example.composemultiplatform.ui.viewmodel.SampleViewModel
 
 @Composable
 fun SampleScreen(viewModel: SampleViewModel = SampleViewModel()) {
