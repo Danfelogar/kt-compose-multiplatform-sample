@@ -7,6 +7,10 @@ import org.koin.plugin.module.dsl.modules
 fun initKoin(config: KoinAppDeclaration? = null) {
     startKoin {
         config?.invoke(this)
-        modules(AppModule::class, TodoModule::class)
+        modules(
+            AppModule::class,
+            TodoModule::class,
+            ProductsModule::class
+        )
     }
 }

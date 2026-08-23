@@ -7,6 +7,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.composemultiplatform.ui.screens.ProductScreen
 import com.example.composemultiplatform.ui.screens.SampleScreen
 import com.example.composemultiplatform.ui.screens.TodoScreen
 import com.example.composemultiplatform.ui.theme.GlobalTheme
@@ -20,10 +21,11 @@ fun App() {
             modifier = Modifier
                 .fillMaxSize()
         ){ innerPadding ->
-            TodoScreen(
-                modifier = Modifier
-                    .padding(innerPadding)
-            )
+//            TodoScreen(
+//                modifier = Modifier
+//                    .padding(innerPadding)
+//            )
+            ProductScreen()
         }
     }
 }

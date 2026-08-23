@@ -1,4 +1,3 @@
-import com.android.tools.r8.internal.im
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
@@ -9,6 +8,7 @@ plugins {
     //custom
     alias(libs.plugins.ksp)
     alias(libs.plugins.koin.compiler)
+    alias(libs.plugins.kotlinSerialization)
 }
 
 kotlin {
