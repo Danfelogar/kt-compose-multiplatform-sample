@@ -7,6 +7,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.composemultiplatform.navigation.NavRoot
 import com.example.composemultiplatform.ui.screens.ProductScreen
 import com.example.composemultiplatform.ui.screens.SampleScreen
 import com.example.composemultiplatform.ui.screens.TodoScreen
@@ -25,7 +26,8 @@ fun App() {
 //                modifier = Modifier
 //                    .padding(innerPadding)
 //            )
-            ProductScreen()
+//            ProductScreen()
+            NavRoot()
         }
     }
 }

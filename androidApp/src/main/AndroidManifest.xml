@@ -18,6 +18,25 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--http://my-url.com/-->
+                <data android:scheme="https" />
+                <data android:host="my-url.com" />
+                <data android:pathPrefix="/item/" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--poop://my-url.com/-->
+                <data android:scheme="poop" />
+                <data android:host="my-url.com" />
+                <data android:pathPrefix="/item/" />
+            </intent-filter>
         </activity>
     </application>
 
