@@ -17,17 +17,17 @@ import com.example.composemultiplatform.ui.theme.GlobalTheme
 @Preview
 fun App() {
     GlobalTheme {
-//        SampleScreen()
-        Scaffold(
-            modifier = Modifier
-                .fillMaxSize()
-        ){ innerPadding ->
+        SampleScreen()
+//        Scaffold(
+//            modifier = Modifier
+//                .fillMaxSize()
+//        ){ innerPadding ->
 //            TodoScreen(
 //                modifier = Modifier
 //                    .padding(innerPadding)
 //            )
 //            ProductScreen()
-            NavRoot()
-        }
+//            NavRoot()
+//        }
     }
 }
