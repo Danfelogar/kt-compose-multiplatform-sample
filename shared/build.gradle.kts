@@ -50,6 +50,8 @@ kotlin {
             implementation(libs.koin.android)
             implementation(libs.ktor.client.okhttp)
             implementation(libs.kotlinx.coroutines.android)
+            implementation(libs.androidx.datastore)
+            implementation(libs.androidx.datastore.preferences)
         }
         commonMain.dependencies {
             implementation(libs.compose.runtime)
@@ -62,17 +64,18 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtimeCompose)
             // custom
             implementation(libs.koin.core)
-            implementation(libs.koin.core)
             implementation(libs.koin.compose)
             implementation(libs.koin.compose)
             implementation(libs.ktor.client.core)
             implementation(libs.koin.annotations)
             implementation(libs.navigation.compose)
+            implementation(libs.androidx.datastore)
             implementation(libs.ktor.client.logging)
             implementation(libs.koin.compose.viewmodel)
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.compose.materialIconsCore)
             implementation(libs.compose.materialIconsExtended)
+            implementation(libs.androidx.datastore.preferences)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.koin.compose.viewmodel.navigation)

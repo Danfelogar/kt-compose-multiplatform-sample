@@ -10,7 +10,8 @@ fun initKoin(config: KoinAppDeclaration? = null) {
         modules(
             AppModule::class,
             TodoModule::class,
-            ProductsModule::class
+            ProductsModule::class,
+            LanguageModule::class
         )
     }
 }

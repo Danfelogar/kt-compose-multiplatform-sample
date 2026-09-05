@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.composemultiplatform.navigation.NavRoot
 import com.example.composemultiplatform.ui.screens.ProductScreen
+import com.example.composemultiplatform.ui.screens.SampleChangeLanguageScreen
 import com.example.composemultiplatform.ui.screens.SampleScreen
 import com.example.composemultiplatform.ui.screens.TodoScreen
 import com.example.composemultiplatform.ui.theme.GlobalTheme
@@ -17,7 +18,8 @@ import com.example.composemultiplatform.ui.theme.GlobalTheme
 @Preview
 fun App() {
     GlobalTheme {
-        SampleScreen()
+//        SampleScreen()
+        SampleChangeLanguageScreen()
 //        Scaffold(
 //            modifier = Modifier
 //                .fillMaxSize()
