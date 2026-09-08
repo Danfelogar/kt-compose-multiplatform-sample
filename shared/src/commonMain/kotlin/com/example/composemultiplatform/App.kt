@@ -11,6 +11,7 @@ import com.example.composemultiplatform.navigation.NavRoot
 import com.example.composemultiplatform.ui.screens.ProductScreen
 import com.example.composemultiplatform.ui.screens.SampleChangeLanguageScreen
 import com.example.composemultiplatform.ui.screens.SampleScreen
+import com.example.composemultiplatform.ui.screens.SecureForKSafeScreen
 import com.example.composemultiplatform.ui.screens.TodoScreen
 import com.example.composemultiplatform.ui.theme.GlobalTheme
 
@@ -19,7 +20,8 @@ import com.example.composemultiplatform.ui.theme.GlobalTheme
 fun App() {
     GlobalTheme {
 //        SampleScreen()
-        SampleChangeLanguageScreen()
+//        SampleChangeLanguageScreen()
+        SecureForKSafeScreen()
 //        Scaffold(
 //            modifier = Modifier
 //                .fillMaxSize()

@@ -63,9 +63,11 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
             // custom
+            implementation(libs.ksafe)
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
             implementation(libs.koin.compose)
+            implementation(libs.ksafe.compose)
             implementation(libs.ktor.client.core)
             implementation(libs.koin.annotations)
             implementation(libs.navigation.compose)
