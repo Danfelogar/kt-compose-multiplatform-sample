@@ -12,7 +12,8 @@
                 TodoModule::class,
                 ProductsModule::class,
                 LanguageModule::class,
-                SecureModule::class
+                SecureModule::class,
+                DiagnosticsModule::class
             )
         }
     }

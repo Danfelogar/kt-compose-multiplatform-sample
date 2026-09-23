@@ -10,4 +10,7 @@ plugins {
     alias(libs.plugins.ksp) apply false
     alias(libs.plugins.koin.compiler) apply false
     alias(libs.plugins.kotlinSerialization) apply false
+    //firebase-services
+    alias(libs.plugins.google.services) apply false
+
 }

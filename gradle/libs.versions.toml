@@ -23,6 +23,10 @@ composeIconsCore = "1.7.3"
 composeIconsExtended = "1.7.3"
 datastore = "1.2.1"
 ksafe = "3.2.0"
+play-integrity = "1.4.0"
+kotlincrypto-hash = "0.5.3"
+google-services = "4.5.0"
+firebase-bom = "34.19.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -70,6 +74,14 @@ androidx-datastore-preferences = { module = "androidx.datastore:datastore-prefer
 #k-safe
 ksafe = { module = "eu.anifantakis:ksafe", version.ref = "ksafe" }
 ksafe-compose = { module = "eu.anifantakis:ksafe-compose", version.ref = "ksafe" }
+#play-integrity
+play-integrity = { module = "com.google.android.play:integrity", version.ref = "play-integrity" }
+kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "kotlinx-coroutines" }
+kotlincrypto-sha2 = { module = "org.kotlincrypto.hash:sha2", version.ref = "kotlincrypto-hash" }
+#firebase-services
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -81,3 +93,5 @@ kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref =
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 koin-compiler = { id = "io.insert-koin.compiler.plugin", version.ref = "koin-plugin" }
 kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+#firebase-services
+google-services = { id = "com.google.gms.google-services", version.ref = "google-services" }

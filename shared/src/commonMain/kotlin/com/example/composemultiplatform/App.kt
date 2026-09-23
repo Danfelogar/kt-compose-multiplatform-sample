@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.composemultiplatform.navigation.NavRoot
+import com.example.composemultiplatform.ui.screens.DeviceDiagnosticsScreen
 import com.example.composemultiplatform.ui.screens.ProductScreen
 import com.example.composemultiplatform.ui.screens.SampleChangeLanguageScreen
 import com.example.composemultiplatform.ui.screens.SampleScreen
@@ -21,7 +22,8 @@ fun App() {
     GlobalTheme {
 //        SampleScreen()
 //        SampleChangeLanguageScreen()
-        SecureForKSafeScreen()
+//        SecureForKSafeScreen()
+        DeviceDiagnosticsScreen()
 //        Scaffold(
 //            modifier = Modifier
 //                .fillMaxSize()

@@ -52,6 +52,11 @@ kotlin {
             implementation(libs.kotlinx.coroutines.android)
             implementation(libs.androidx.datastore)
             implementation(libs.androidx.datastore.preferences)
+            implementation(libs.play.integrity)
+            implementation(libs.kotlinx.coroutines.play.services)
+            //firebase-services
+            implementation(project.dependencies.platform(libs.firebase.bom))
+            implementation(libs.firebase.analytics)
         }
         commonMain.dependencies {
             implementation(libs.compose.runtime)
@@ -70,6 +75,7 @@ kotlin {
             implementation(libs.ksafe.compose)
             implementation(libs.ktor.client.core)
             implementation(libs.koin.annotations)
+            implementation(libs.kotlincrypto.sha2)
             implementation(libs.navigation.compose)
             implementation(libs.androidx.datastore)
             implementation(libs.ktor.client.logging)

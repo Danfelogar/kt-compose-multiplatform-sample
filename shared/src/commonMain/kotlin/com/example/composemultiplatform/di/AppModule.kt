@@ -21,7 +21,7 @@ import org.koin.core.annotation.Single
 
 
 @Module
-@ComponentScan("com.example.composemultiplatform.data")
+@ComponentScan("com.example.composemultiplatform")
 class AppModule {
 
     @Single
