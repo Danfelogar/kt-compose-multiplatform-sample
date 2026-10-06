@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import java.util.Properties
 
 plugins {
     alias(libs.plugins.androidApplication)
@@ -26,7 +27,22 @@ dependencies {
     //firebase-services
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.analytics)
+
+    implementation(libs.chottulink.android)
 }
+
+val localProperties = Properties().apply {
+    val file = rootProject.file("local.properties")
+    if (file.exists()) {
+        file.inputStream().use { load(it) }
+    }
+}
+
+fun localProperty(name: String): String = localProperties.getProperty(name).orEmpty().trim()
+
+val chottuLinkApiKey = localProperty("CHOTTULINK_API_KEY")
+val chottuLinkDomainRaw = localProperty("CHOTTULINK_DOMAIN")
+val chottuLinkDomain = chottuLinkDomainRaw.ifBlank { "yourapp.chottu.link" }
 
 android {
     namespace = "com.example.composemultiplatform"
@@ -38,6 +54,10 @@ android {
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
+        buildConfigField("String", "CHOTTULINK_API_KEY", "\"${chottuLinkApiKey.escapeForBuildConfig()}\"")
+        buildConfigField("String", "CHOTTULINK_DOMAIN", "\"${chottuLinkDomain.escapeForBuildConfig()}\"")
+        buildConfigField("boolean", "CHOTTULINK_CONFIGURED", "${chottuLinkApiKey.isNotBlank() && chottuLinkDomainRaw.isNotBlank()}")
+        manifestPlaceholders["chottuLinkHost"] = chottuLinkDomain
     }
     packaging {
         resources {
@@ -59,5 +79,9 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
+
+private fun String.escapeForBuildConfig(): String =
+    replace("\\", "\\\\").replace("\"", "\\\"")

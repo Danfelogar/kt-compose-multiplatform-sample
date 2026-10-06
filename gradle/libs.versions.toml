@@ -27,6 +27,7 @@ play-integrity = "1.4.0"
 kotlincrypto-hash = "0.5.3"
 google-services = "4.5.0"
 firebase-bom = "34.19.0"
+chottulink = "1.2.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -81,6 +82,8 @@ kotlincrypto-sha2 = { module = "org.kotlincrypto.hash:sha2", version.ref = "kotl
 #firebase-services
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
 firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+#chottulink
+chottulink-android = { module = "com.chottulink:android-sdk", version.ref = "chottulink" }
 
 
 [plugins]

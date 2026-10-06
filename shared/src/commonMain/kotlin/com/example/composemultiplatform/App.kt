@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.composemultiplatform.navigation.NavRoot
+import com.example.composemultiplatform.ui.screens.ChottuLinkPilotScreen
 import com.example.composemultiplatform.ui.screens.DeviceDiagnosticsScreen
 import com.example.composemultiplatform.ui.screens.ProductScreen
 import com.example.composemultiplatform.ui.screens.SampleChangeLanguageScreen
@@ -23,7 +24,8 @@ fun App() {
 //        SampleScreen()
 //        SampleChangeLanguageScreen()
 //        SecureForKSafeScreen()
-        DeviceDiagnosticsScreen()
+//        DeviceDiagnosticsScreen()
+        ChottuLinkPilotScreen()
 //        Scaffold(
 //            modifier = Modifier
 //                .fillMaxSize()
